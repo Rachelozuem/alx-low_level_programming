@@ -3,10 +3,11 @@
 /**
  * rev_string - reverses a string
  * @s: input string
- * Return: string inreserve
+ * Return: string in reserve
  */
 void rev_string(char *s)
 {
+	char rev = s[0];
 	int counter = 0;
 	int i;
 
