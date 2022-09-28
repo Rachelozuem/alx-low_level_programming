@@ -1,5 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
+
+/** 
+ * void prototypes()
+ * int prototypes()
+ */
 
 void _puts_recursion(char *s);
 int _putchar(char c);
@@ -12,4 +17,4 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 
-#endif
+#endif /* MAIN_H_INCLUDED */
