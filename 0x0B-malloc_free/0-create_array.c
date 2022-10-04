@@ -9,7 +9,7 @@
  * Return: NULL if it fails or
  * pointer to array.
  */
-char *create_array(unsigned int size, cgar c)
+char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	unsigned int i;
@@ -18,7 +18,9 @@ char *create_array(unsigned int size, cgar c)
 	{
 		return (NULL);
         }
+
        arr = malloc(sizeof(char) * size);
+
        /* check if malloc was successfull */
        
        if (arr == NULL)
@@ -30,4 +32,4 @@ char *create_array(unsigned int size, cgar c)
 	}
         return (arr);
 }	
-                    
+
