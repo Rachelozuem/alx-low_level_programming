@@ -11,25 +11,25 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *arr;
+	char *a
 	unsigned int i;
 
-	if (size == 0)
-	{
+	if (size == 0)	
 		return (NULL);
-        }
 
-       arr = malloc(sizeof(char) * size);
+	a = malloc(size * sizeof(char));
 
-       /* check if malloc was successfull */
+
+	if (a == NULL)
+		return (NULL);
        
-       if (arr == NULL)
-               return (NULL);
+      for (i = 0; i < size; i++)
+	      a[i] = c;
 
-        for (i = 0; i < size; i++)
-	{
-	       arr[i] = c;
-	}
-        return (arr);
-}	
+      return (a);
+}
+
+       
+       
+    	
 
