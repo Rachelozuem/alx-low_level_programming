@@ -13,17 +13,19 @@ void _print(char *str, int l)
 	int i, j;
 
 	i = j = 0;
-	while (i, l)
+	while (i < l)
 	{
 		if (str[i] != '0')
-			j = l;
+			j = 1;
 		if (j || i == l - 1)
 			_putchar(str[i]);
 		i++;
 	}
+
 	_putchar('\n');
 	free(str);
 }
+
 /**
  * mul - multiplies a cha with a string and places the answer into dest
  * @n: char to multiply
