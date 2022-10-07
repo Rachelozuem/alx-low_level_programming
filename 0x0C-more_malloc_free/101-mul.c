@@ -118,9 +118,9 @@ int main(int argc, char *argv[])
 	}
 	for (l1 = 0; argv[1][l1]; l1++)
 		;
-	for (l2 = 0; agrv[2][l2]; l2++)
+	for (l2 = 0; argv[2][l2]; l2++)
 		;
-	ln = l1 + l2 = 1;
+	ln = l1 + l2 + 1;
 	a = malloc(ln * sizeof(char));
 	if (a == NULL)
 	{
@@ -140,6 +140,6 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 	}
-	print(a, ln - 1);
+	_print(a, ln - 1);
 	return (0);
 }
